@@ -21,3 +21,7 @@ test("calculate function", () => {
   expect(calculate.divide(4, 2)).toBe(2);
   expect(calculate.multiply(1, 2)).toBe(2);
 });
+
+test("Caesar Cipher", () => {
+  expect(caesarCipher("Hello, world!", 3));
+});
