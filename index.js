@@ -89,11 +89,11 @@ function analyzeArray(array) {
 }
 
 console.log(capitalize("hello, World!"));
-
+let calculate = Calculator();
 module.exports = {
   capitalize,
   reverseString,
-  Calculator,
+  calculate,
   caesarCipher,
   analyzeArray,
 };
