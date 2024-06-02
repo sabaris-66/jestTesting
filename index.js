@@ -1,5 +1,5 @@
 function capitalize(string) {
-  return string[0].toUpperCase() + string.slice(1);
+  return string.split("")[0].toUpperCase() + string.slice(1);
 }
 
 function reverseString(string) {
@@ -55,7 +55,6 @@ function caesarCipher(string, cipher) {
         string[i] = String.fromCharCode(string[i].charCodeAt() + cipher);
       }
     }
-    console.log(string);
   }
 
   // string.forEach((element) => {
@@ -89,7 +88,12 @@ function analyzeArray(array) {
   };
 }
 
-let c = String.fromCharCode(97, 99);
+console.log(capitalize("hello, World!"));
 
-console.log(String.fromCharCode("a".charCodeAt() + 3));
-console.log(caesarCipher("Hello, World!", 3));
+module.exports = {
+  capitalize,
+  reverseString,
+  Calculator,
+  caesarCipher,
+  analyzeArray,
+};
