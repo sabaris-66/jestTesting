@@ -25,3 +25,12 @@ test("calculate function", () => {
 test("Caesar Cipher", () => {
   expect(caesarCipher("Hello, world!", 3));
 });
+
+let a = analyzeArray([2, 4, 6, 9]);
+
+test("Analyze array", () => {
+  expect(a.length).toBe(4);
+  expect(a.avg).toBe(21 / 4);
+  expect(a.max).toBe(9);
+  expect(a.min).toBe(2);
+});
